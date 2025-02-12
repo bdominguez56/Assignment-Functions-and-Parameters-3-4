@@ -30,8 +30,25 @@ let person = {
 // access the properties
 console.log(person.name);   // Output: name1
 console.log(person.age);    // Output: 25
+
+
 console.log(person.city);   // Output: New York
 console.log(person.isStudent); // Output: false
 
 // invoke the method (greet function)
 person.greet();  // Output: Hello, name1!
+
+// object with multiple properties and a method
+let person = {
+    name: "name2",
+    age: 30,
+    
+    // method to greet the person
+    greet: function() {
+        console.log("Hello, my name is " + this.name + " and I am " + this.age + " years old.");
+    }
+};
+
+// Invoke the method
+person.greet();  // Output: Hello, my name is name2 and I am 30 years old.
+
